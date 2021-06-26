@@ -1,9 +1,15 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop": {
     "children": [
@@ -14,7 +20,9 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktop"]
+    "children": [
+      "flex-layout.row#desktop"
+    ]
   },
   "flex-layout.row#desktop": {
     "props": {
@@ -36,27 +44,37 @@
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"
-    }
+    },
+    "children": [
+      "rich-text#storeName"
+    ]
   },
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo"]
+    "children": [
+      "logo"
+    ]
   },
   "logo": {
     "props": {
-      "title": "Logo",
+      "title": "House'Store",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "url": "assets/logos/logo.svg",
+      "width": "35",
+      "showLabel": true
     }
   },
   "header-layout.mobile": {
-    "children": ["sticky-layout#mobile"]
+    "children": [
+      "sticky-layout#mobile"
+    ]
   },
   "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobile"]
+    "children": [
+      "flex-layout.row#mobile"
+    ]
   },
   "flex-layout.row#mobile": {
     "children": [
@@ -74,6 +92,31 @@
     }
   },
   "drawer": {
-    "children": []
+    "children": [
+      "flex-layout.row#menuItem1"
+    ]
+  },
+  "flex-layout.row#menuItem1": {
+    "children": [
+      "rich-text#menuItem1"
+    ],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#menuItem1": {
+    "props": {
+      "text": "Coluna item 1",
+      "blockClass": "sticky-header"
+    }
+  },
+  "rich-text#storeName": {
+    "props": {
+      "text": "House'Store",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-8"
+    }
   }
 }

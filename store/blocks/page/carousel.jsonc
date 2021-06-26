@@ -1,0 +1,33 @@
+{
+    "list-context.image-list#mainPage": {
+        "children": [
+            "slider-layout#mainPage"
+        ],
+        "props": {
+            "height": "400",
+            "images": [
+                {
+                    "image": "assets/houses/casa1.jpg",
+                    "description": "Bela casa"
+                },
+                {
+                    "image": "assets/houses/casa2.jpg",
+                    "description": "Casa bela"
+                },
+                {
+                    "image": "assets/houses/casa3.jpg",
+                    "description": "Casa imaginária"
+                }
+            ]
+        }
+    },
+    "slider-layout#mainPage": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          }
+        }
+      }
+}

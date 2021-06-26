@@ -14,13 +14,23 @@
   },
   "flex-layout.row#footer": { 
     "children": [
-      "image"
+      "image",
+      "logo#git"
     ]
   },
   "image": {
     "props": {
       "width": 100,
       "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+    }
+  },
+  "logo#git": {
+    "props": {
+      "title": "MichelSilvas",
+      "href": "https://github.com/michelsilvas",
+      "url": "https://github.com/michelsilvas.png",
+      "width": "50",
+      "blockClass": "github"
     }
   }
 }
