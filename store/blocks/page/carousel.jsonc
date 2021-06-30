@@ -1,33 +1,46 @@
 {
     "list-context.image-list#mainPage": {
         "children": [
-            "slider-layout#mainPage"
+            "flex-layout.row#lateralSpacer",
+            "slider-layout#mainPage",
+            "flex-layout.row#lateralSpacer"
         ],
         "props": {
-            "height": "400",
-            "images": [
-                {
-                    "image": "assets/houses/casa1.jpg",
-                    "description": "Bela casa"
-                },
-                {
-                    "image": "assets/houses/casa2.jpg",
-                    "description": "Casa bela"
-                },
-                {
-                    "image": "assets/houses/casa3.jpg",
-                    "description": "Casa imaginária"
-                }
-            ]
+            "height": 400,
+            "width": 600
         }
     },
     "slider-layout#mainPage": {
         "props": {
-          "itemsPerPage": {
-            "desktop": 1,
-            "tablet": 1,
-            "phone": 1
-          }
+            "itemsPerPage": {
+                "desktop": 2,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true
+        },
+        "children": [
+            "image#casaBonita",
+            "image#casaBela",
+            "image#casaImaginaria"
+        ]
+    },
+    "image#casaBonita": {
+        "props": {
+            "image": "assets/houses/casa1.jpg",
+            "description": "Bela casa"
         }
-      }
+    },
+    "image#casaBela": {
+        "props": {
+            "image": "assets/houses/casa2.jpg",
+            "description": "Casa bela"
+        }
+    },
+    "image#casaImaginaria": {
+        "props": {
+            "image": "assets/houses/casa3.jpg",
+            "description": "Casa imaginária"
+        }
+    }
 }

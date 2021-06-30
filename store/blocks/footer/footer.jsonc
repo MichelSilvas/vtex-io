@@ -9,13 +9,19 @@
   },
   "footer-layout.mobile": { 
     "children": [
-      "flex-layout.row#footer"
+      "flex-layout.row#footerMobile"
+    ]
+  },
+  "flex-layout.row#footerMobile": { 
+    "children": [
+      "image",
+      "logo#git"
     ]
   },
   "flex-layout.row#footer": { 
     "children": [
-      "image",
-      "logo#git"
+      "image#mobile",
+      "logo#gitMobile"
     ]
   },
   "image": {
@@ -29,7 +35,22 @@
       "title": "MichelSilvas",
       "href": "https://github.com/michelsilvas",
       "url": "https://github.com/michelsilvas.png",
-      "width": "50",
+      "width": 50,
+      "blockClass": "github"
+    }
+  },
+  "image#mobile": {
+    "props": {
+      "width": 50,
+      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+    }
+  },
+  "logo#gitMobile": {
+    "props": {
+      "title": "MichelSilvas",
+      "href": "https://github.com/michelsilvas",
+      "url": "https://github.com/michelsilvas.png",
+      "width": 50,
       "blockClass": "github"
     }
   }
