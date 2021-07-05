@@ -3,10 +3,5 @@
     "blocks": [
       "list-context.image-list#mainPage"
     ]
-  },
-  "flex-layout.row#lateralSpacer": {
-    "props": {
-      "width": 150
-    }
   }
 }
