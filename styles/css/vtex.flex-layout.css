@@ -1,3 +1,16 @@
-.container {
-    background-color: red;
+
+.flexRow--productDetails {
+    display: flex;
+    
+    background-color: greenyellow;
+}
+
+.flex-layout.row {
+    background-color: yellow;
+}
+
+
+.flexRow--viewProduto{
+    display: flex;
+    background-color: turquoise;
 }

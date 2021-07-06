@@ -8,3 +8,13 @@
 .productNameContainer {
     background-color: cadetblue;
 }
+
+.sellingPrice {
+    background-color:orange;
+}
+
+.container {
+    background-color: red;
+    flex: box;
+    flex-direction: column;
+}
