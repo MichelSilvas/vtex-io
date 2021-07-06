@@ -6,19 +6,19 @@
   },
   "flex-layout.row#product": {
     "children": [
-      "flex-layout.row#productimage",
-      "flex-layout.row#productDetails"
+      "flex-layout.col#productimage",
+      "flex-layout.col#productDetails"
     ],
     "props": {
       "blockClass": "viewProduto"
     }
   },
-  "flex-layout.row#productimage": {
+  "flex-layout.col#productimage": {
     "children": [
       "product-images"
     ]
   },
-  "flex-layout.row#productDetails": {
+  "flex-layout.col#productDetails": {
     "children": [
       "product-name",
       "product-price"

@@ -1,16 +1,14 @@
-
-.flexRow--productDetails {
+.flexCol--productDetails {
     display: flex;
-    
-    background-color: greenyellow;
+    flex-direction: column;
+    padding: 5% 5% 5% 15%;
+    justify-content: right;
 }
 
 .flex-layout.row {
-    background-color: yellow;
+    
 }
 
-
 .flexRow--viewProduto{
-    display: flex;
-    background-color: turquoise;
+    display: flex;    
 }
